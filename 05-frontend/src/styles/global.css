@@ -1,0 +1,174 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   YupReserved design tokens
+   Paper, ink and four Indian pigments. Light = "afternoon on handmade paper",
+   dark = "a monsoon night in indigo". Both are designed, neither is derived.
+   ═══════════════════════════════════════════════════════════════════════════ */
+@import "tailwindcss";
+@import "@fontsource-variable/fraunces/full.css";
+@import "@fontsource-variable/hanken-grotesk";
+@import "@fontsource-variable/jetbrains-mono";
+@import "@fontsource/tiro-devanagari-hindi/400.css";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --paper: #f6efe4;
+  --paper-2: #efe5d5;
+  --card: #fbf7f0;
+  --ink: #1e2233;
+  --ink-2: #4a4f63;
+  --ink-3: #7b7f8f;
+  --line: #ddd0bb;
+  --sindoor: #c4472b;
+  --sindoor-ink: #fff6ec;
+  --haldi: #e3a72f;
+  --peacock: #1f6f6b;
+  --monsoon: #5b6c8f;
+  --shadow: 30 34 51;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12141f;
+    --paper-2: #191c2b;
+    --card: #1c2031;
+    --ink: #efe6d6;
+    --ink-2: #c4bcae;
+    --ink-3: #8f8a82;
+    --line: #2e3348;
+    --sindoor: #e0613f;
+    --sindoor-ink: #1a0f0b;
+    --haldi: #f0b847;
+    --peacock: #3fa39b;
+    --monsoon: #8ea0c6;
+    --shadow: 0 0 0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12141f;
+  --paper-2: #191c2b;
+  --card: #1c2031;
+  --ink: #efe6d6;
+  --ink-2: #c4bcae;
+  --ink-3: #8f8a82;
+  --line: #2e3348;
+  --sindoor: #e0613f;
+  --sindoor-ink: #1a0f0b;
+  --haldi: #f0b847;
+  --peacock: #3fa39b;
+  --monsoon: #8ea0c6;
+  --shadow: 0 0 0;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-sindoor: var(--sindoor);
+  --color-sindoor-ink: var(--sindoor-ink);
+  --color-haldi: var(--haldi);
+  --color-peacock: var(--peacock);
+  --color-monsoon: var(--monsoon);
+  --font-display: "Fraunces Variable", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Hanken Grotesk Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-hindi: "Tiro Devanagari Hindi", "Noto Serif Devanagari", serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, Menlo, monospace;
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+/* paper grain — a single tiny inline SVG noise, very low opacity */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+:root[data-theme="dark"] body::before { mix-blend-mode: screen; opacity: 0.035; }
+
+/* elements floating over a photo: re-map the tokens to light ink */
+.on-photo {
+  --ink: #fff6ec;
+  --ink-2: rgb(255 246 236 / 0.88);
+  --ink-3: rgb(255 246 236 / 0.7);
+  --paper: #1e2233;
+  --paper-2: rgb(255 255 255 / 0.14);
+}
+
+::selection { background: var(--haldi); color: #1e2233; }
+
+:focus-visible {
+  outline: 2px solid var(--sindoor);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 60, "WONK" 1;
+  letter-spacing: -0.02em;
+}
+.display-tight { font-family: var(--font-display); font-variation-settings: "SOFT" 30, "WONK" 0; letter-spacing: -0.025em; }
+.hindi { font-family: var(--font-hindi); letter-spacing: 0; }
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* jaali lattice — a repeating 8-point star pattern used as a quiet texture */
+.jaali {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M22 4l4 10 10-4-4 10 10 4-10 4 4 10-10-4-4 10-4-10-10 4 4-10L2 22l10-4-4-10 10 4z' fill='none' stroke='%23000' stroke-opacity='.07' stroke-width='1'/%3E%3C/svg%3E");
+}
+:root[data-theme="dark"] .jaali { filter: invert(1); }
+
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+/* ticket edge used on the booking confirmation and price cards */
+.ticket-edge {
+  --notch: 12px;
+  mask: radial-gradient(circle var(--notch) at 0 50%, #0000 98%, #000) left / 51% 100% no-repeat,
+        radial-gradient(circle var(--notch) at 100% 50%, #0000 98%, #000) right / 51% 100% no-repeat;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--paper-2) 0%, var(--line) 50%, var(--paper-2) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .skeleton { animation: none; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

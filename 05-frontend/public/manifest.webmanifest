@@ -1,0 +1,23 @@
+{
+  "name": "YupReserved — stays across India",
+  "short_name": "YupReserved",
+  "description": "Find and book a stay anywhere in India: heritage palaces, beach huts, houseboats and hill cottages.",
+  "id": "/",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6EFE4",
+  "theme_color": "#C4472B",
+  "lang": "en-IN",
+  "categories": ["travel", "lifestyle"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Find a stay", "url": "/stays", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "My trips", "url": "/trips", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
