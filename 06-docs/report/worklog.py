@@ -246,6 +246,9 @@ SESSIONS = [
             "grant and every function grant identical to the local database; 177 constraints and 8 triggers present.",
             "API against Neon: OTP (wrong code refused), booking YRC3G9KA then cancelled, request without a token "
             "refused, why-not, race, deadlock, plan and 5NF demos all answer.",
+            "Live at https://yupreserved.vercel.app (deployed with the Vercel CLI): pages, manifest, service worker "
+            "and API answer in 0.3–0.6 s; OTP sign-in, booking YR3UVAFQ then cancelled, and the lab, race, deadlock, "
+            "isolation, plan and join demos all work.",
         ],
     },
 ]

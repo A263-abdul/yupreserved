@@ -9,3 +9,7 @@ node_modules/
 # local tooling
 pyrightconfig.json
 .claude/
+
+# Vercel CLI link
+.vercel/
+.env*.local
