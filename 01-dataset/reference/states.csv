@@ -1,0 +1,37 @@
+state_code,state_name,region,is_union_territory
+AN,Andaman and Nicobar Islands,SOUTH,true
+AP,Andhra Pradesh,SOUTH,false
+AR,Arunachal Pradesh,NORTHEAST,false
+AS,Assam,NORTHEAST,false
+BR,Bihar,EAST,false
+CH,Chandigarh,NORTH,true
+CG,Chhattisgarh,CENTRAL,false
+DH,Dadra and Nagar Haveli and Daman and Diu,WEST,true
+DL,Delhi,NORTH,true
+GA,Goa,WEST,false
+GJ,Gujarat,WEST,false
+HR,Haryana,NORTH,false
+HP,Himachal Pradesh,NORTH,false
+JK,Jammu and Kashmir,NORTH,true
+JH,Jharkhand,EAST,false
+KA,Karnataka,SOUTH,false
+KL,Kerala,SOUTH,false
+LA,Ladakh,NORTH,true
+LD,Lakshadweep,SOUTH,true
+MP,Madhya Pradesh,CENTRAL,false
+MH,Maharashtra,WEST,false
+MN,Manipur,NORTHEAST,false
+ML,Meghalaya,NORTHEAST,false
+MZ,Mizoram,NORTHEAST,false
+NL,Nagaland,NORTHEAST,false
+OD,Odisha,EAST,false
+PY,Puducherry,SOUTH,true
+PB,Punjab,NORTH,false
+RJ,Rajasthan,WEST,false
+SK,Sikkim,NORTHEAST,false
+TN,Tamil Nadu,SOUTH,false
+TG,Telangana,SOUTH,false
+TR,Tripura,NORTHEAST,false
+UP,Uttar Pradesh,NORTH,false
+UK,Uttarakhand,NORTH,false
+WB,West Bengal,EAST,false

@@ -1,0 +1,53 @@
+amenity_id,amenity_name,category
+1,Free Wi-Fi,ESSENTIALS
+2,Air Conditioning,ESSENTIALS
+3,Power Backup,ESSENTIALS
+4,Parking,ESSENTIALS
+5,Lift,ESSENTIALS
+6,Hot Water,ESSENTIALS
+7,Heating,ESSENTIALS
+8,Room Service 24x7,ESSENTIALS
+9,Housekeeping,ESSENTIALS
+10,Front Desk 24x7,ESSENTIALS
+11,Restaurant,DINING
+12,Fine Dining,DINING
+13,Cafe,DINING
+14,Bar / Lounge,DINING
+15,Breakfast Included,DINING
+16,Meals Included,DINING
+17,Vegetarian / Jain Food,DINING
+18,Swimming Pool,WELLNESS
+19,Spa,WELLNESS
+20,Fitness Centre,WELLNESS
+21,Yoga,WELLNESS
+22,Business Centre,BUSINESS
+23,Conference Hall,BUSINESS
+24,Banquet Hall,BUSINESS
+25,Family Rooms,FAMILY
+26,Kids Play Area,FAMILY
+27,Pet Friendly,FAMILY
+28,Airport Transfer,TRANSPORT
+29,Travel Desk,TRANSPORT
+30,Car Rental,TRANSPORT
+31,Bicycle Rental,TRANSPORT
+32,Boat Transfer,TRANSPORT
+33,Laundry,SERVICES
+34,Doctor on Call,SERVICES
+35,Concierge,SERVICES
+36,Currency Exchange,SERVICES
+37,Luggage Storage,SERVICES
+38,CCTV Security,SERVICES
+39,Garden,EXPERIENCE
+40,Rooftop Terrace,EXPERIENCE
+41,Bonfire,EXPERIENCE
+42,Adventure Activities,EXPERIENCE
+43,Beachfront,EXPERIENCE
+44,Desert Safari,EXPERIENCE
+45,Fireplace,EXPERIENCE
+46,Guided Walks,EXPERIENCE
+47,Heritage Building,EXPERIENCE
+48,Lake View,EXPERIENCE
+49,Mountain View,EXPERIENCE
+50,Private Deck,EXPERIENCE
+51,River View,EXPERIENCE
+52,Sea View,EXPERIENCE

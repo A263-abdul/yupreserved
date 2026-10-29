@@ -1,0 +1,34 @@
+{
+  "cleaning_rules": {
+    "C0 raw rows": 4000,
+    "C1 duplicate (name, city) removed": 1,
+    "C2 coordinates outside India removed": 3,
+    "C3 chain-brand listings removed": 431,
+    "C4 unknown state / property type removed": 0,
+    "C5 clean listings kept": 3565
+  },
+  "row_counts": {
+    "states": 36,
+    "cities": 543,
+    "hotels": 3583,
+    "amenities": 52,
+    "hotel_amenities": 38107,
+    "landmarks": 2056,
+    "hotel_landmarks": 17556,
+    "room_types": 8626,
+    "rooms": 58511,
+    "seasons": 16,
+    "guests": 26000,
+    "bookings": 72000,
+    "booking_rooms": 83381,
+    "reviews": 19041
+  },
+  "base_price_quartiles_inr": {
+    "p25": 1699,
+    "median": 2699,
+    "p75": 5299
+  },
+  "seed": 2026,
+  "simulated_today": "2026-10-29",
+  "total_rows": 329508
+}

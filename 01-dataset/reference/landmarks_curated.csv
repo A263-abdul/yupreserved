@@ -1,0 +1,97 @@
+city,state_code,landmark_name,category,latitude,longitude
+Mumbai,MH,Gateway of India,HERITAGE,18.9220,72.8347
+Mumbai,MH,Marine Drive,NATURE,18.9440,72.8230
+Mumbai,MH,Chhatrapati Shivaji Maharaj Terminus,HERITAGE,18.9400,72.8353
+Mumbai,MH,Juhu Beach,BEACH,19.0988,72.8267
+Mumbai,MH,Bandra-Worli Sea Link,LANDMARK,19.0380,72.8170
+Mumbai,MH,Siddhivinayak Temple,TEMPLE,19.0170,72.8302
+Delhi,DL,India Gate,HERITAGE,28.6129,77.2295
+Delhi,DL,Red Fort,HERITAGE,28.6562,77.2410
+Delhi,DL,Qutub Minar,HERITAGE,28.5245,77.1855
+Delhi,DL,Humayun's Tomb,HERITAGE,28.5933,77.2507
+Delhi,DL,Connaught Place,MARKET,28.6315,77.2167
+Delhi,DL,Lotus Temple,TEMPLE,28.5535,77.2588
+Delhi,DL,Chandni Chowk,MARKET,28.6506,77.2303
+Delhi,DL,Jantar Mantar,HERITAGE,28.6271,77.2166
+Hyderabad,TG,Charminar,HERITAGE,17.3616,78.4747
+Hyderabad,TG,Golconda Fort,HERITAGE,17.3833,78.4011
+Hyderabad,TG,Hussain Sagar,LAKE,17.4239,78.4738
+Hyderabad,TG,HITEC City,BUSINESS,17.4435,78.3772
+Jaipur,RJ,Hawa Mahal,HERITAGE,26.9239,75.8267
+Jaipur,RJ,Amber Fort,HERITAGE,26.9855,75.8513
+Jaipur,RJ,City Palace,HERITAGE,26.9258,75.8237
+Jaipur,RJ,Jantar Mantar,HERITAGE,26.9248,75.8246
+Jaipur,RJ,Nahargarh Fort,HERITAGE,26.9373,75.8155
+Udaipur,RJ,City Palace,HERITAGE,24.5764,73.6835
+Udaipur,RJ,Lake Pichola,LAKE,24.5720,73.6790
+Udaipur,RJ,Fateh Sagar Lake,LAKE,24.6000,73.6760
+Udaipur,RJ,Jag Mandir,HERITAGE,24.5683,73.6789
+Agra,UP,Taj Mahal,HERITAGE,27.1751,78.0421
+Agra,UP,Agra Fort,HERITAGE,27.1795,78.0211
+Goa,GA,Calangute Beach,BEACH,15.5439,73.7553
+Goa,GA,Baga Beach,BEACH,15.5553,73.7517
+Goa,GA,Anjuna Beach,BEACH,15.5733,73.7400
+Goa,GA,Candolim Beach,BEACH,15.5180,73.7626
+Goa,GA,Basilica of Bom Jesus,HERITAGE,15.5009,73.9116
+Goa,GA,Fort Aguada,HERITAGE,15.4920,73.7737
+Goa,GA,Palolem Beach,BEACH,15.0100,74.0232
+Kolkata,WB,Victoria Memorial,HERITAGE,22.5448,88.3426
+Kolkata,WB,Howrah Bridge,LANDMARK,22.5851,88.3468
+Kolkata,WB,Park Street,MARKET,22.5530,88.3520
+Chennai,TN,Marina Beach,BEACH,13.0500,80.2824
+Chennai,TN,Kapaleeshwarar Temple,TEMPLE,13.0339,80.2696
+Bangalore,KA,Lalbagh Botanical Garden,NATURE,12.9507,77.5848
+Bangalore,KA,Bangalore Palace,HERITAGE,12.9987,77.5921
+Bangalore,KA,Cubbon Park,NATURE,12.9763,77.5929
+Bangalore,KA,MG Road,MARKET,12.9756,77.6066
+Varanasi,UP,Dashashwamedh Ghat,TEMPLE,25.3070,83.0107
+Varanasi,UP,Assi Ghat,TEMPLE,25.2867,83.0066
+Varanasi,UP,Kashi Vishwanath Temple,TEMPLE,25.3109,83.0107
+Amritsar,PB,Golden Temple,TEMPLE,31.6200,74.8765
+Amritsar,PB,Jallianwala Bagh,HERITAGE,31.6207,74.8801
+Jaisalmer,RJ,Jaisalmer Fort,HERITAGE,26.9124,70.9126
+Jaisalmer,RJ,Sam Sand Dunes,NATURE,26.8390,70.5040
+Jodhpur,RJ,Mehrangarh Fort,HERITAGE,26.2978,73.0185
+Jodhpur,RJ,Umaid Bhawan Palace,HERITAGE,26.2810,73.0470
+Mysore,KA,Mysore Palace,HERITAGE,12.3052,76.6552
+Mysore,KA,Chamundi Hills,TEMPLE,12.2724,76.6730
+Rishikesh,UK,Laxman Jhula,LANDMARK,30.1260,78.3300
+Rishikesh,UK,Triveni Ghat,TEMPLE,30.1036,78.2970
+Haridwar,UK,Har Ki Pauri,TEMPLE,29.9560,78.1710
+Shimla,HP,The Ridge,LANDMARK,31.1040,77.1720
+Shimla,HP,Mall Road,MARKET,31.1046,77.1734
+Manali,HP,Hadimba Temple,TEMPLE,32.2480,77.1800
+Manali,HP,Solang Valley,NATURE,32.3166,77.1572
+Manali,HP,Mall Road,MARKET,32.2432,77.1892
+Darjeeling,WB,Tiger Hill,NATURE,27.0150,88.2780
+Darjeeling,WB,Batasia Loop,LANDMARK,27.0130,88.2490
+Munnar,KL,Eravikulam National Park,NATURE,10.1960,77.0610
+Munnar,KL,Mattupetty Dam,LAKE,10.1060,77.1240
+Alleppey,KL,Alappuzha Beach,BEACH,9.4930,76.3170
+Alleppey,KL,Vembanad Lake,LAKE,9.6000,76.3900
+Kochi,KL,Chinese Fishing Nets,HERITAGE,9.9680,76.2420
+Kochi,KL,Mattancherry Palace,HERITAGE,9.9580,76.2590
+Srinagar,JK,Dal Lake,LAKE,34.1100,74.8700
+Srinagar,JK,Shalimar Bagh,NATURE,34.1490,74.8810
+Pune,MH,Shaniwar Wada,HERITAGE,18.5195,73.8553
+Pune,MH,Aga Khan Palace,HERITAGE,18.5524,73.9015
+Ahmedabad,GJ,Sabarmati Ashram,HERITAGE,23.0607,72.5809
+Ahmedabad,GJ,Kankaria Lake,LAKE,23.0063,72.6010
+Ooty,TN,Ooty Lake,LAKE,11.4090,76.6900
+Ooty,TN,Government Botanical Garden,NATURE,11.4180,76.7110
+Gangtok,SK,MG Marg,MARKET,27.3290,88.6120
+Gangtok,SK,Tsomgo Lake,LAKE,27.3750,88.7630
+Puri,OD,Jagannath Temple,TEMPLE,19.8048,85.8179
+Puri,OD,Puri Beach,BEACH,19.7980,85.8250
+Nainital,UK,Naini Lake,LAKE,29.3919,79.4542
+Coorg,KA,Abbey Falls,NATURE,12.4560,75.7180
+Coorg,KA,Raja's Seat,NATURE,12.4200,75.7390
+Pondicherry,PY,Promenade Beach,BEACH,11.9330,79.8360
+Chandigarh,CH,Rock Garden,NATURE,30.7525,76.8101
+Chandigarh,CH,Sukhna Lake,LAKE,30.7421,76.8188
+Kodaikanal,TN,Kodaikanal Lake,LAKE,10.2340,77.4870
+Mahabaleshwar,MH,Venna Lake,LAKE,17.9250,73.6620
+Gurgaon,HR,Cyber Hub,BUSINESS,28.4950,77.0890
+Corbett,UK,Jim Corbett National Park,NATURE,29.5300,78.7747
+Leh,LA,Shanti Stupa,TEMPLE,34.1735,77.5713
+Leh,LA,Leh Palace,HERITAGE,34.1663,77.5860

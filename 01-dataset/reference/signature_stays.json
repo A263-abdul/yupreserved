@@ -1,0 +1,226 @@
+{
+  "_about": "Original YupReserved 'Signature' properties. These are invented for the platform (not real hotels) and are merged with the Goibibo listings by the pipeline. Prices are list prices in INR per night before tax.",
+  "stays": [
+    {
+      "code": "SIG-001", "name": "Samudra Mahal", "city": "Mumbai", "state_code": "MH",
+      "locality": "Colaba", "address": "Apollo Bunder Road, Colaba, Mumbai 400001",
+      "latitude": 18.9217, "longitude": 72.8325, "property_type": "Heritage Hotel", "star_rating": 5,
+      "tagline": "Wake to the harbour, two minutes from the Gateway.",
+      "description": "A 1912 sea-facing mansion of Malad stone and teak, restored room by room. Mornings begin with filter coffee on a verandah that looks straight across the Arabian Sea at the Gateway of India; evenings end with the ferries' lights going out one by one. Colaba's lanes - the Causeway stalls, the old Irani cafes, the galleries of Kala Ghoda - are all a stroll away.",
+      "amenities": ["Sea View", "Swimming Pool", "Spa", "Fine Dining", "Bar / Lounge", "Free Wi-Fi", "Airport Transfer", "Concierge", "Room Service 24x7", "Fitness Centre", "Air Conditioning"],
+      "rooms": [
+        {"name": "Harbour Room", "bed": "KING", "adults": 2, "children": 1, "sqft": 380, "price": 18500, "count": 14},
+        {"name": "Gateway View Suite", "bed": "KING", "adults": 3, "children": 1, "sqft": 720, "price": 34000, "count": 6},
+        {"name": "Bunder Presidential Suite", "bed": "KING", "adults": 4, "children": 2, "sqft": 1450, "price": 72000, "count": 2}
+      ]
+    },
+    {
+      "code": "SIG-002", "name": "Charminar Courtyard", "city": "Hyderabad", "state_code": "TG",
+      "locality": "Laad Bazaar", "address": "Off Laad Bazaar, near Charminar, Hyderabad 500002",
+      "latitude": 17.3608, "longitude": 78.4729, "property_type": "Haveli", "star_rating": 3,
+      "tagline": "Bangles, biryani and the call to prayer, all from one courtyard.",
+      "description": "A Qutb Shahi-era courtyard house with eleven rooms around a neem tree. Step out of the arched gate and you are in Laad Bazaar, glass bangles glittering on both sides; turn left and Charminar fills the end of the lane. Irani chai at dawn, haleem at dusk, and a rooftop that sees the whole old city light up.",
+      "amenities": ["Heritage Building", "Rooftop Terrace", "Free Wi-Fi", "Breakfast Included", "Air Conditioning", "Travel Desk", "Family Rooms"],
+      "rooms": [
+        {"name": "Courtyard Room", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 220, "price": 3400, "count": 6},
+        {"name": "Jharokha Room", "bed": "KING", "adults": 2, "children": 1, "sqft": 280, "price": 4600, "count": 3},
+        {"name": "Family Diwan", "bed": "TWIN", "adults": 4, "children": 2, "sqft": 420, "price": 6800, "count": 2}
+      ]
+    },
+    {
+      "code": "SIG-003", "name": "Pichola Rajbagh", "city": "Udaipur", "state_code": "RJ",
+      "locality": "Lake Pichola", "address": "Lal Ghat, Lake Pichola, Udaipur 313001",
+      "latitude": 24.5745, "longitude": 73.6800, "property_type": "Palace", "star_rating": 5,
+      "tagline": "A palace that keeps its feet in the lake.",
+      "description": "Built as a summer retreat for a minor Mewar noble, Rajbagh sits so close to the water that the lake light moves across its painted ceilings. Arrive by boat, take tea in the zenana garden, and watch the City Palace turn gold at sunset from your own jharokha. The old city's ghats and havelis begin at the garden wall.",
+      "amenities": ["Lake View", "Heritage Building", "Swimming Pool", "Spa", "Fine Dining", "Boat Transfer", "Free Wi-Fi", "Concierge", "Air Conditioning", "Room Service 24x7"],
+      "rooms": [
+        {"name": "Zenana Garden Room", "bed": "KING", "adults": 2, "children": 1, "sqft": 420, "price": 24000, "count": 10},
+        {"name": "Jharokha Lake Suite", "bed": "KING", "adults": 3, "children": 1, "sqft": 800, "price": 42000, "count": 5},
+        {"name": "Maharani Suite", "bed": "KING", "adults": 4, "children": 2, "sqft": 1600, "price": 95000, "count": 1}
+      ]
+    },
+    {
+      "code": "SIG-004", "name": "Morjim Driftwood Shacks", "city": "Goa", "state_code": "GA",
+      "locality": "Morjim", "address": "Turtle Beach Road, Morjim, North Goa 403512",
+      "latitude": 15.6260, "longitude": 73.7330, "property_type": "Beach Hut", "star_rating": 0,
+      "tagline": "Sand on the floor, sea at the door.",
+      "description": "Twelve driftwood huts on stilts at the quiet end of Morjim, where Olive Ridley turtles nest in winter. Hammocks, a shack kitchen frying the day's catch, and nothing much to do except swim at sunrise and sleep through the afternoon heat.",
+      "amenities": ["Beachfront", "Free Wi-Fi", "Restaurant", "Bar / Lounge", "Bicycle Rental", "Pet Friendly"],
+      "rooms": [
+        {"name": "Driftwood Hut", "bed": "DOUBLE", "adults": 2, "children": 0, "sqft": 180, "price": 2900, "count": 8},
+        {"name": "Sea-front Hut", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 220, "price": 4200, "count": 4}
+      ]
+    },
+    {
+      "code": "SIG-005", "name": "Amber Haveli", "city": "Jaipur", "state_code": "RJ",
+      "locality": "Amer", "address": "Sagar Road, Amer, Jaipur 302028",
+      "latitude": 26.9800, "longitude": 75.8490, "property_type": "Haveli", "star_rating": 4,
+      "tagline": "Under the ramparts of Amber, in the old town of Amer.",
+      "description": "A pink-sandstone haveli in the lanes below Amber Fort, with frescoed walls and a stepwell-style pool cut into the courtyard. Walk up to the fort before the crowds, eat dal baati in a village kitchen, and come back for a slow sundowner as the ramparts are lit.",
+      "amenities": ["Heritage Building", "Swimming Pool", "Restaurant", "Free Wi-Fi", "Air Conditioning", "Travel Desk", "Rooftop Terrace", "Breakfast Included"],
+      "rooms": [
+        {"name": "Fresco Room", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 300, "price": 7800, "count": 8},
+        {"name": "Fort View Room", "bed": "KING", "adults": 2, "children": 1, "sqft": 360, "price": 10500, "count": 5},
+        {"name": "Rawal Suite", "bed": "KING", "adults": 4, "children": 2, "sqft": 700, "price": 18500, "count": 2}
+      ]
+    },
+    {
+      "code": "SIG-006", "name": "Vembanad Kettuvallam", "city": "Alleppey", "state_code": "KL",
+      "locality": "Punnamada", "address": "Punnamada Jetty, Alappuzha 688006",
+      "latitude": 9.5100, "longitude": 76.3450, "property_type": "Houseboat", "star_rating": 3,
+      "tagline": "Your own rice barge on the backwaters.",
+      "description": "A coir-and-jackwood kettuvallam that once carried rice from Kuttanad, now with two bedrooms and a cook who makes karimeen pollichathu the way his mother did. Drift past paddy fields below sea level, toddy shops and duck farms, and moor at a quiet canal for the night.",
+      "amenities": ["Lake View", "Meals Included", "Air Conditioning", "Private Deck", "Family Rooms"],
+      "rooms": [
+        {"name": "Two-Bedroom Kettuvallam", "bed": "DOUBLE", "adults": 4, "children": 2, "sqft": 450, "price": 11500, "count": 3},
+        {"name": "Honeymoon Kettuvallam", "bed": "KING", "adults": 2, "children": 0, "sqft": 300, "price": 8900, "count": 2}
+      ]
+    },
+    {
+      "code": "SIG-007", "name": "Ghat Ninety-One", "city": "Varanasi", "state_code": "UP",
+      "locality": "Dashashwamedh", "address": "D-17/91 Dashashwamedh Ghat, Varanasi 221001",
+      "latitude": 25.3060, "longitude": 83.0100, "property_type": "Guest House", "star_rating": 2,
+      "tagline": "Ninety-one steps from the evening aarti.",
+      "description": "A narrow, five-storey guest house wedged between temples, with a rooftop that faces the Ganga. Boatmen call up from the ghat at dawn; by dusk the aarti's lamps and conch shells are right below you. Simple rooms, honest prices, and the best lassi on the lane next door.",
+      "amenities": ["River View", "Rooftop Terrace", "Free Wi-Fi", "Travel Desk", "Hot Water"],
+      "rooms": [
+        {"name": "Lane Room", "bed": "DOUBLE", "adults": 2, "children": 0, "sqft": 150, "price": 1450, "count": 6},
+        {"name": "Ganga View Room", "bed": "DOUBLE", "adults": 2, "children": 1, "sqft": 180, "price": 2300, "count": 4},
+        {"name": "Rooftop Family Room", "bed": "TWIN", "adults": 4, "children": 1, "sqft": 260, "price": 3200, "count": 1}
+      ]
+    },
+    {
+      "code": "SIG-008", "name": "Chai Bagaan Bungalow", "city": "Munnar", "state_code": "KL",
+      "locality": "Chithirapuram", "address": "Chithirapuram Estate Road, Munnar 685565",
+      "latitude": 10.0890, "longitude": 77.0600, "property_type": "Bungalow", "star_rating": 4,
+      "tagline": "A planter's bungalow in a sea of tea.",
+      "description": "A 1920s planter's bungalow with a red tin roof, a fireplace in every room and tea bushes right up to the lawn. Walk the estate with the factory manager, watch the mist burn off the Anamudi slopes, and eat appam and stew by the fire.",
+      "amenities": ["Mountain View", "Fireplace", "Garden", "Free Wi-Fi", "Restaurant", "Breakfast Included", "Guided Walks"],
+      "rooms": [
+        {"name": "Planter's Room", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 340, "price": 8400, "count": 4},
+        {"name": "Estate Suite", "bed": "KING", "adults": 3, "children": 1, "sqft": 560, "price": 13200, "count": 2}
+      ]
+    },
+    {
+      "code": "SIG-009", "name": "Dal Shikara House", "city": "Srinagar", "state_code": "JK",
+      "locality": "Dal Lake", "address": "Ghat No. 9, Boulevard Road, Dal Lake, Srinagar 190001",
+      "latitude": 34.1000, "longitude": 74.8650, "property_type": "Houseboat", "star_rating": 3,
+      "tagline": "Walnut wood, kahwa, and the lake at your window.",
+      "description": "A carved walnut-wood houseboat moored on the quiet side of Dal Lake. Floating vendors bring saffron and flowers to the deck at dawn; a shikara takes you to the Mughal gardens by afternoon. Kahwa is always on.",
+      "amenities": ["Lake View", "Heating", "Meals Included", "Free Wi-Fi", "Boat Transfer"],
+      "rooms": [
+        {"name": "Walnut Cabin", "bed": "DOUBLE", "adults": 2, "children": 1, "sqft": 200, "price": 5200, "count": 3},
+        {"name": "Chinar Suite", "bed": "KING", "adults": 3, "children": 1, "sqft": 340, "price": 8100, "count": 1}
+      ]
+    },
+    {
+      "code": "SIG-010", "name": "Sonar Qila Haveli", "city": "Jaisalmer", "state_code": "RJ",
+      "locality": "Fort Area", "address": "Inside Jaisalmer Fort, near Laxminath Temple, Jaisalmer 345001",
+      "latitude": 26.9120, "longitude": 70.9125, "property_type": "Haveli", "star_rating": 3,
+      "tagline": "Sleep inside a living golden fort.",
+      "description": "One of the few stays still inside the walls of Jaisalmer's golden fort, with sandstone screens carved as fine as lace. Watch the desert turn amber from the battlements, then drive out to the dunes at Sam for a night under the stars.",
+      "amenities": ["Heritage Building", "Rooftop Terrace", "Restaurant", "Free Wi-Fi", "Air Conditioning", "Desert Safari"],
+      "rooms": [
+        {"name": "Jaali Room", "bed": "DOUBLE", "adults": 2, "children": 1, "sqft": 200, "price": 3900, "count": 5},
+        {"name": "Bastion Room", "bed": "KING", "adults": 2, "children": 1, "sqft": 260, "price": 5600, "count": 3}
+      ]
+    },
+    {
+      "code": "SIG-011", "name": "Lutyens Lodge", "city": "Delhi", "state_code": "DL",
+      "locality": "Lutyens' Delhi", "address": "Pandara Road, near India Gate, New Delhi 110003",
+      "latitude": 28.6100, "longitude": 77.2250, "property_type": "Hotel", "star_rating": 4,
+      "tagline": "A bungalow on the boulevards, a walk from India Gate.",
+      "description": "A whitewashed 1930s bungalow on a jamun-lined road in Lutyens' Delhi, turned into twenty quiet rooms. Run along Kartavya Path at dawn, eat kebabs at Pandara Market at night, and use the garden as your office in between.",
+      "amenities": ["Garden", "Free Wi-Fi", "Restaurant", "Bar / Lounge", "Air Conditioning", "Fitness Centre", "Business Centre", "Airport Transfer"],
+      "rooms": [
+        {"name": "Garden Room", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 320, "price": 9800, "count": 12},
+        {"name": "Verandah Suite", "bed": "KING", "adults": 3, "children": 1, "sqft": 540, "price": 16500, "count": 6}
+      ]
+    },
+    {
+      "code": "SIG-012", "name": "Cubbon Leaf", "city": "Bangalore", "state_code": "KA",
+      "locality": "Kasturba Road", "address": "Kasturba Road, opposite Cubbon Park, Bengaluru 560001",
+      "latitude": 12.9740, "longitude": 77.5960, "property_type": "Boutique Hotel", "star_rating": 3,
+      "tagline": "Filter coffee, a park the size of a forest, and a fast desk.",
+      "description": "Forty compact rooms looking into the rain trees of Cubbon Park. Built for people in town for work who would rather walk to a darshini for idli than order room service. Weekends, the park is yours.",
+      "amenities": ["Free Wi-Fi", "Business Centre", "Air Conditioning", "Cafe", "Fitness Centre", "Breakfast Included"],
+      "rooms": [
+        {"name": "Canopy Room", "bed": "QUEEN", "adults": 2, "children": 0, "sqft": 200, "price": 4900, "count": 24},
+        {"name": "Park Studio", "bed": "KING", "adults": 2, "children": 1, "sqft": 300, "price": 6900, "count": 10}
+      ]
+    },
+    {
+      "code": "SIG-013", "name": "Pine Needle Cottage", "city": "Shimla", "state_code": "HP",
+      "locality": "Jakhoo", "address": "Jakhoo Hill Road, above The Ridge, Shimla 171001",
+      "latitude": 31.1030, "longitude": 77.1760, "property_type": "Cottage", "star_rating": 2,
+      "tagline": "A quiet hill stay above the Ridge.",
+      "description": "A three-room cottage among deodars on Jakhoo hill, ten minutes' walk above the Ridge and the Mall. Wood stove, hot water bottles, aloo paratha breakfasts and a view of the Shivaliks that changes every hour.",
+      "amenities": ["Mountain View", "Heating", "Garden", "Free Wi-Fi", "Breakfast Included", "Pet Friendly"],
+      "rooms": [
+        {"name": "Deodar Room", "bed": "DOUBLE", "adults": 2, "children": 1, "sqft": 180, "price": 2600, "count": 2},
+        {"name": "Attic Room", "bed": "QUEEN", "adults": 2, "children": 2, "sqft": 240, "price": 3500, "count": 1}
+      ]
+    },
+    {
+      "code": "SIG-014", "name": "Spice Warehouse Fort Kochi", "city": "Kochi", "state_code": "KL",
+      "locality": "Fort Kochi", "address": "Bazaar Road, Mattancherry, Kochi 682002",
+      "latitude": 9.9600, "longitude": 76.2560, "property_type": "Heritage Hotel", "star_rating": 4,
+      "tagline": "Pepper, teak and the smell of the sea.",
+      "description": "A Dutch-era pepper warehouse on Bazaar Road with teak beams, a long pool where the godown floor used to be, and a jetty on the harbour. Walk to the Chinese fishing nets at sunset and to Jew Town's antique shops in the morning.",
+      "amenities": ["Heritage Building", "Swimming Pool", "Restaurant", "Free Wi-Fi", "Air Conditioning", "Spa", "Bicycle Rental"],
+      "rooms": [
+        {"name": "Godown Room", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 320, "price": 8800, "count": 10},
+        {"name": "Harbour Loft", "bed": "KING", "adults": 3, "children": 1, "sqft": 520, "price": 14500, "count": 4}
+      ]
+    },
+    {
+      "code": "SIG-015", "name": "Solang Snowline Camp", "city": "Manali", "state_code": "HP",
+      "locality": "Solang Valley", "address": "Solang Nala Road, Palchan, Manali 175131",
+      "latitude": 32.3150, "longitude": 77.1580, "property_type": "Tent", "star_rating": 0,
+      "tagline": "Insulated tents, a bonfire, and the Beas below.",
+      "description": "Insulated alpine tents on a meadow at the head of Solang Valley, with snow on the peaks most of the year. Paraglide in the morning, sit by the bonfire at night, and wake to the sound of the river.",
+      "amenities": ["Mountain View", "Bonfire", "Meals Included", "Heating", "Adventure Activities"],
+      "rooms": [
+        {"name": "Alpine Tent", "bed": "DOUBLE", "adults": 2, "children": 1, "sqft": 160, "price": 3100, "count": 10},
+        {"name": "Family Dome", "bed": "TWIN", "adults": 4, "children": 2, "sqft": 260, "price": 5200, "count": 3}
+      ]
+    },
+    {
+      "code": "SIG-016", "name": "Hooghly Ghat House", "city": "Kolkata", "state_code": "WB",
+      "locality": "Ahiritola", "address": "Ahiritola Ghat Road, North Kolkata 700005",
+      "latitude": 22.5960, "longitude": 88.3580, "property_type": "Guest House", "star_rating": 3,
+      "tagline": "Ferry horns, rosogolla, and a riverside verandah.",
+      "description": "A 19th-century zamindar house on the Hooghly with green shutters, chequered marble floors and a verandah that watches the ferries cross to Howrah. Kumartuli's idol-makers work two lanes away; in Durga Puja season, the whole neighbourhood is a gallery.",
+      "amenities": ["River View", "Heritage Building", "Free Wi-Fi", "Breakfast Included", "Air Conditioning", "Travel Desk"],
+      "rooms": [
+        {"name": "Shutter Room", "bed": "DOUBLE", "adults": 2, "children": 1, "sqft": 240, "price": 3800, "count": 5},
+        {"name": "Zamindar Suite", "bed": "KING", "adults": 3, "children": 1, "sqft": 420, "price": 6400, "count": 2}
+      ]
+    },
+    {
+      "code": "SIG-017", "name": "Ganga Kinara Retreat", "city": "Rishikesh", "state_code": "UK",
+      "locality": "Tapovan", "address": "Tapovan, near Laxman Jhula, Rishikesh 249192",
+      "latitude": 30.1240, "longitude": 78.3280, "property_type": "Resort", "star_rating": 3,
+      "tagline": "Yoga at six, rafting at ten, silence after dark.",
+      "description": "Cottages stepping down a hillside to a private sand beach on the Ganga, upstream of the bustle of Laxman Jhula. A shala for morning yoga, a sattvic kitchen, and the river loud enough to sleep to.",
+      "amenities": ["River View", "Yoga", "Restaurant", "Free Wi-Fi", "Garden", "Adventure Activities", "Spa"],
+      "rooms": [
+        {"name": "Hillside Cottage", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 260, "price": 5600, "count": 8},
+        {"name": "River Cottage", "bed": "KING", "adults": 3, "children": 1, "sqft": 340, "price": 7900, "count": 4}
+      ]
+    },
+    {
+      "code": "SIG-018", "name": "Rue Romain Villa", "city": "Pondicherry", "state_code": "PY",
+      "locality": "White Town", "address": "Rue Romain Rolland, White Town, Puducherry 605001",
+      "latitude": 11.9340, "longitude": 79.8350, "property_type": "Villa", "star_rating": 4,
+      "tagline": "Yellow walls, bougainvillea, and croissants by the sea.",
+      "description": "A French-colonial villa with ochre walls and a courtyard full of bougainvillea, one street back from the Promenade. Cycle through White Town before the heat, swim at Serenity Beach, and end the day with a bakery run.",
+      "amenities": ["Heritage Building", "Swimming Pool", "Garden", "Free Wi-Fi", "Air Conditioning", "Bicycle Rental", "Breakfast Included"],
+      "rooms": [
+        {"name": "Courtyard Chambre", "bed": "QUEEN", "adults": 2, "children": 1, "sqft": 300, "price": 7200, "count": 5},
+        {"name": "Villa Suite", "bed": "KING", "adults": 4, "children": 2, "sqft": 680, "price": 13800, "count": 2}
+      ]
+    }
+  ]
+}
