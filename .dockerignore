@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+**/__pycache__
+**/.DS_Store
+.git
+.vscode
+01-dataset
+06-docs
+05-frontend/tsconfig.tsbuildinfo

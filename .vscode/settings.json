@@ -1,0 +1,11 @@
+{
+  "python.defaultInterpreterPath": "/Users/abdularkansidd/.yupreserved/venv/bin/python",
+  "python.analysis.extraPaths": ["${workspaceFolder}/03-backend"],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/node_modules": true,
+    "**/.DS_Store": true
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.sortOrder": "default"
+}

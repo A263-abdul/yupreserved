@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+05-frontend/dist/
+.env
+*.tsbuildinfo
+
+# local tooling
+pyrightconfig.json
+.claude/
