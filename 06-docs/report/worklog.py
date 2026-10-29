@@ -233,7 +233,8 @@ SESSIONS = [
             (".gitignore", "also ignores local tooling (pyrightconfig.json, .claude/)"),
             ("api/index.py, api/requirements.txt", "Vercel entry point: imports the FastAPI app from 03-backend"),
             ("vercel.json, .vercelignore", "build command, output folder, rewrites, function size and duration"),
-            ("scripts/deploy-db.sh", "also prints a random YUP_SECRET for Vercel"),
+            ("scripts/deploy-db.sh", "prints a random YUP_SECRET, stops on any restore error, sets the India time "
+             "zone, restores the purge function's REVOKE FROM PUBLIC"),
         ],
         "tables": [],
         "concepts": [],
@@ -241,6 +242,10 @@ SESSIONS = [
             "145 files (~34 MB, largest 9.5 MB) checked for secrets before committing: none found.",
             "Pushed to main; the repository is public and opens without signing in.",
             "The Vercel entry point, run locally: health, search, hotel page and a why-not scenario all answer.",
+            "Database copied to Neon (PostgreSQL 18, Singapore) in 76 s: row counts of all 38 tables, every table "
+            "grant and every function grant identical to the local database; 177 constraints and 8 triggers present.",
+            "API against Neon: OTP (wrong code refused), booking YRC3G9KA then cancelled, request without a token "
+            "refused, why-not, race, deadlock, plan and 5NF demos all answer.",
         ],
     },
 ]

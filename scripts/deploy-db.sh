@@ -33,17 +33,20 @@ ALTER ROLE yup_analyst PASSWORD '$AN_PW';
 SQL
 
 echo "▸ restoring (a few minutes)"
-"$PG_BIN/pg_restore" --dbname="$TARGET" --no-owner --no-privileges --clean --if-exists --exit-on-error "$DUMP" || true
+"$PG_BIN/pg_restore" --dbname="$TARGET" --no-owner --no-privileges --clean --if-exists --exit-on-error "$DUMP"
 
 echo "▸ re-applying privileges"
 DBNAME="$("$PG_BIN/psql" "$TARGET" -Atc 'SELECT current_database()')"
-sed "s/DATABASE yupreserved/DATABASE \"$DBNAME\"/" "$(dirname "$0")/../02-database/schema/07_roles.sql" \
-  | grep -v "CREATE ROLE\|PASSWORD" | "$PG_BIN/psql" "$TARGET" -q
-"$PG_BIN/psql" "$TARGET" -q -f "$(dirname "$0")/../02-database/schema/08_auth.sql"
-"$PG_BIN/psql" "$TARGET" -q <<'SQL'
+# 07_roles.sql without its CREATE ROLE block (the roles were created above, with new passwords)
+sed -e '/^DO \$\$/,/^\$\$;/d' -e "s/DATABASE yupreserved/DATABASE \"$DBNAME\"/" \
+  "$(dirname "$0")/../02-database/schema/07_roles.sql" | "$PG_BIN/psql" "$TARGET" -q -v ON_ERROR_STOP=1
+"$PG_BIN/psql" "$TARGET" -q -v ON_ERROR_STOP=1 -f "$(dirname "$0")/../02-database/schema/08_auth.sql"
+"$PG_BIN/psql" "$TARGET" -q -v ON_ERROR_STOP=1 <<SQL
+ALTER DATABASE "$DBNAME" SET timezone TO 'Asia/Kolkata';
 GRANT USAGE ON SCHEMA lab, staging TO yup_app, yup_lab;
 GRANT SELECT ON ALL TABLES IN SCHEMA lab, staging TO yup_app, yup_lab;
 GRANT UPDATE ON lab.txn_demo TO yup_app;
+REVOKE ALL ON FUNCTION lab.purge_demo_bookings() FROM PUBLIC;
 GRANT EXECUTE ON FUNCTION lab.purge_demo_bookings() TO yup_app;
 SQL
 
