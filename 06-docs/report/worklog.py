@@ -200,4 +200,34 @@ SESSIONS = [
             "Production mode: FastAPI serves the built site, manifest, service worker and API from one origin.",
         ],
     },
+    {
+        "number": 4,
+        "date": "29 October 2026",
+        "title": "Published on GitHub",
+        "summary": (
+            "The project is published as a public repository, github.com/A263-abdul/yupreserved, in eight commits "
+            "that follow the folder structure, with an MIT licence and topic tags."
+        ),
+        "decisions": [
+            ("One commit per layer",
+             "Commits follow the architecture: setup, dataset, database, backend, CLI, frontend, docs, deployment. "
+             "The history then reads like the report and each layer can be reviewed on its own."),
+            ("What is not in the repository",
+             "node_modules, the built site, caches, .env files and local tooling are ignored. The PostgreSQL data "
+             "directory lives outside the project, so the database is rebuilt from the CSVs with scripts/db.sh build. "
+             "No passwords are committed: deploy-db.sh generates fresh role passwords on the hosted database."),
+            ("Licence",
+             "Code under MIT; the source dataset and the Wikimedia photos keep their own licences (credits stored per photo)."),
+        ],
+        "files": [
+            ("LICENSE", "MIT licence"),
+            (".gitignore", "also ignores local tooling (pyrightconfig.json, .claude/)"),
+        ],
+        "tables": [],
+        "concepts": [],
+        "verified": [
+            "145 files (~34 MB, largest 9.5 MB) checked for secrets before committing: none found.",
+            "Pushed to main; the repository is public and opens without signing in.",
+        ],
+    },
 ]
