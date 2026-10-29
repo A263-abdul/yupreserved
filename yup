@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# YupReserved CLI — ./yup --help
+exec "$HOME/.yupreserved/venv/bin/python" "$(dirname "$0")/04-cli/yup.py" "$@"
