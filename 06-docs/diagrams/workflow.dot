@@ -1,0 +1,24 @@
+digraph W {
+  graph [rankdir=TB, bgcolor="white", nodesep=0.3, ranksep=0.34, fontname="Helvetica", pad=0.3];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10.5, color="#1E2233", fillcolor="#FBF7F0", width=3.6];
+  edge [color="#5B6C8F", fontname="Helvetica", fontsize=9, fontcolor="#5B6C8F"];
+  s1 [label="1 · Search: city / landmark / mood\nGET /api/destinations → UNION of cities, landmarks, hotels"];
+  s2 [label="2 · Results\nGET /api/search → joins + full-text + division (must-have amenities)"];
+  s3 [label="3 · Hotel page\nGET /api/hotels/:id  ·  fn_available_rooms()  ·  fn_quote_stay()"];
+  s4 [label="4 · Sign in with phone + OTP\nlookup by candidate key guests.phone  (or INSERT new guest)"];
+  s5 [label="5 · Confirm & pay  →  POST /api/bookings  →  fn_book_stay()", fillcolor="#F3E3C3"];
+  t1 [label="BEGIN"];
+  t2 [label="SELECT … FROM rooms … ORDER BY room_id FOR UPDATE\n(lock every room of the type — 2PL, no deadlock)"];
+  t3 [label="pick free rooms: fn_room_is_free()  (date-range overlap)"];
+  d1 [label="enough rooms?", shape=diamond, width=1.8, fillcolor="#FFFFFF"];
+  t4 [label="INSERT bookings   (trg_bookings_ref → YRxxxxxx)"];
+  t5 [label="INSERT booking_rooms   (trg_booking_rooms_guard: same hotel, no overlap)"];
+  t6 [label="INSERT payments   (CHECK amount > 0, UPI VPA format)"];
+  t7 [label="deferred trg_booking_capacity  → guests fit?"];
+  ok [label="COMMIT  →  /booked/YRxxxxxx", fillcolor="#1F6F6B", fontcolor="white"];
+  no [label="ROLLBACK  →  error + rule shown to the guest", fillcolor="#C4472B", fontcolor="white"];
+  s1 -> s2 -> s3 -> s4 -> s5 -> t1 -> t2 -> t3 -> d1;
+  d1 -> t4 [label="yes"]; d1 -> no [label="no"];
+  t4 -> t5 -> t6 -> t7 -> ok;
+  t5 -> no [style=dashed, label="overlap"]; t7 -> no [style=dashed, label="too many guests"];
+}

@@ -1,0 +1,33 @@
+digraph A {
+  graph [rankdir=LR, bgcolor="white", nodesep=0.35, ranksep=0.8, fontname="Helvetica", pad=0.3];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#1E2233", fillcolor="#FBF7F0", margin="0.18,0.1"];
+  edge [color="#5B6C8F", fontname="Helvetica", fontsize=9, fontcolor="#5B6C8F"];
+  subgraph cluster_client { label=<<B>1 · PRESENTATION</B>>; fontcolor="#C4472B"; color="#DDD0BB"; style="rounded,dashed";
+    browser [label="Browser / phone\nReact 18 + TypeScript\nVite · Tailwind · Motion"];
+    cli [label="Terminal\n./yup (Typer + Rich)"];
+  }
+  subgraph cluster_api { label=<<B>2 · APPLICATION</B>>; fontcolor="#C4472B"; color="#DDD0BB"; style="rounded,dashed";
+    api [label="FastAPI (Python)\nrouters: browse · booking · lab\nraw SQL, no ORM", fillcolor="#F3E3C3"];
+    pool [label="psycopg 3 connection pools\nyup_app  ·  yup_lab"];
+    err [label="errors.py\nconstraint → plain-language rule"];
+  }
+  subgraph cluster_db { label=<<B>3 · DATA</B>>; fontcolor="#C4472B"; color="#DDD0BB"; style="rounded,dashed";
+    pg [label="PostgreSQL 16  ·  database yupreserved", fillcolor="#1E2233", fontcolor="white"];
+    core [label="schema public\n15 tables · 8 triggers\n7 functions/procedures · 5 views"];
+    labs [label="schemas staging + lab\nraw dataset · NF walk-through\nOODB · fragments · media"];
+    wal [label="WAL + MVCC\nrecovery & concurrency"];
+  }
+  subgraph cluster_data { label=<<B>0 · DATASET</B>>; fontcolor="#C4472B"; color="#DDD0BB"; style="rounded,dashed";
+    raw [label="Goibibo listings (4,000)\n+ reference CSVs"];
+    etl [label="pipeline/build_dataset.py\nclean → enrich → simulate"];
+    csv [label="processed/*.csv\n14 files · 329,508 rows"];
+  }
+  raw -> etl -> csv;
+  csv -> pg [label="\\copy (build.sql)"];
+  browser -> api [label="HTTPS · JSON\n/api/…"];
+  api -> browser [label="data + SQL trace", style=dashed];
+  cli -> api [label="imports same modules", style=dotted];
+  api -> pool -> pg [label="SQL"];
+  pg -> err [style=dashed, label="SQLSTATE"];
+  pg -> core; pg -> labs; pg -> wal;
+}
