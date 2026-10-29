@@ -52,4 +52,5 @@ echo
 echo "✓ done. Set these on the web service:"
 echo "  YUP_DATABASE_URL=postgresql://yup_app:$APP_PW@$HOSTPART"
 echo "  YUP_LAB_DATABASE_URL=postgresql://yup_lab:$LAB_PW@$HOSTPART"
+echo "  YUP_SECRET=$(openssl rand -hex 32)      # Vercel only; Render generates its own"
 rm -f "$DUMP"

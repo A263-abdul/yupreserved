@@ -1,0 +1,8 @@
+# not needed to build the website or run the API on Vercel
+01-dataset
+06-docs
+04-cli
+Dockerfile
+render.yaml
+**/node_modules
+**/__pycache__

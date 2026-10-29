@@ -14,6 +14,7 @@ React website. Every syllabus topic, from ER modelling to crash recovery, can be
 06-docs/       ER / architecture / workflow diagrams and the project report (PDF)
 scripts/       db.sh (start / stop / build) · start.sh (everything at once) · deploy-db.sh
 yup            CLI launcher
+api/ · vercel.json          Vercel deployment (static website + the API as a Python function)
 Dockerfile · render.yaml   one-container deployment (API + website)
 ```
 
@@ -65,10 +66,21 @@ Codes are random, stored only as an HMAC hash (`auth.otp_challenges`), valid 5 m
 
 ## Deploy
 
-1. Create a free PostgreSQL database (e.g. [Neon](https://neon.tech)) and copy its connection string.
-2. `scripts/deploy-db.sh "postgresql://…"` — copies the data and prints the two app connection strings.
-3. On [Render](https://render.com): *New → Blueprint*, pick this repository (it reads `render.yaml`),
-   paste `YUP_DATABASE_URL` and `YUP_LAB_DATABASE_URL`. The site and API are served from one URL.
+The database goes to a hosted PostgreSQL first (e.g. [Neon](https://neon.tech), free):
+
+```bash
+scripts/deploy-db.sh "postgresql://OWNER:PASSWORD@HOST/neondb?sslmode=require"
+```
+
+It copies the data, gives the app roles fresh random passwords and prints `YUP_DATABASE_URL`,
+`YUP_LAB_DATABASE_URL` and `YUP_SECRET`. Then host the site in one of two ways:
+
+| | Vercel | Render |
+|---|---|---|
+| how | *Add New → Project*, import this repository | *New → Blueprint*, pick this repository |
+| config read | `vercel.json` — website as static files, the API as one Python function (`api/index.py`) | `render.yaml` + `Dockerfile` — one container |
+| environment | paste the three printed variables | paste the two database URLs (the secret is generated) |
+| idle | no sleep; cold start ≈ 1–2 s | free plan sleeps; wakes in ≈ 30 s |
 
 ## A 10-minute viva demo
 

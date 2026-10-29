@@ -203,10 +203,11 @@ SESSIONS = [
     {
         "number": 4,
         "date": "29 October 2026",
-        "title": "Published on GitHub",
+        "title": "Published on GitHub, ready for Vercel",
         "summary": (
             "The project is published as a public repository, github.com/A263-abdul/yupreserved, in eight commits "
-            "that follow the folder structure, with an MIT licence and topic tags."
+            "that follow the folder structure, with an MIT licence and topic tags. It can now also be deployed on "
+            "Vercel: the website as static files and the API as one Python serverless function."
         ),
         "decisions": [
             ("One commit per layer",
@@ -218,16 +219,28 @@ SESSIONS = [
              "No passwords are committed: deploy-db.sh generates fresh role passwords on the hosted database."),
             ("Licence",
              "Code under MIT; the source dataset and the Wikimedia photos keep their own licences (credits stored per photo)."),
+            ("Vercel: static site + one Python function",
+             "Vercel serves the built React site from its CDN and runs the unchanged FastAPI app as a single function "
+             "(api/index.py); vercel.json sends every /api/* request to it and every other path to index.html for "
+             "React Router. The database stays on hosted PostgreSQL (Neon) because a serverless function keeps no "
+             "data of its own. Region Singapore (sin1), next to the database, keeps each query's round trip short."),
+            ("Connection pools in a serverless function",
+             "A function instance may skip the ASGI start-up hook, so the pools open when the module is imported. "
+             "check_connection replaces connections the database closed while the instance was idle."),
         ],
         "files": [
             ("LICENSE", "MIT licence"),
             (".gitignore", "also ignores local tooling (pyrightconfig.json, .claude/)"),
+            ("api/index.py, api/requirements.txt", "Vercel entry point: imports the FastAPI app from 03-backend"),
+            ("vercel.json, .vercelignore", "build command, output folder, rewrites, function size and duration"),
+            ("scripts/deploy-db.sh", "also prints a random YUP_SECRET for Vercel"),
         ],
         "tables": [],
         "concepts": [],
         "verified": [
             "145 files (~34 MB, largest 9.5 MB) checked for secrets before committing: none found.",
             "Pushed to main; the repository is public and opens without signing in.",
+            "The Vercel entry point, run locally: health, search, hotel page and a why-not scenario all answer.",
         ],
     },
 ]

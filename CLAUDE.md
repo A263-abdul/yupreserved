@@ -10,7 +10,7 @@ DBMS course project (hotel reservation system for India) that the user presents 
   `~/Desktop/YupReserved Project Log/YupReserved_Project_Log.pdf` and `06-docs/YupReserved_Project_Report.pdf`.
 - Exactly **15 core tables** in schema `public`; demo/teaching objects go in schemas `lab` / `staging`.
 - Every syllabus topic must stay demonstrable (see Part D of the report, `06-docs/report/viva.py`).
-- Keep folders presentable: `01-dataset 02-database 03-backend 04-cli 05-frontend 06-docs scripts`.
+- Keep folders presentable: `01-dataset 02-database 03-backend 04-cli 05-frontend 06-docs scripts` (+ `api/`, required by Vercel).
 - Be gentle with the laptop: disk is nearly full; run builds one at a time.
 
 ## Environment
