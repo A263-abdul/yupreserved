@@ -1,0 +1,23 @@
+# Render blueprint — https://render.com/docs/blueprint-spec
+# One web service built from the Dockerfile. Fill the two database URLs from
+# the output of scripts/deploy-db.sh after loading the data into your Postgres.
+services:
+  - type: web
+    name: yupreserved
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: YUP_DATABASE_URL          # postgresql://yup_app:…@…/yupreserved?sslmode=require
+        sync: false
+      - key: YUP_LAB_DATABASE_URL      # postgresql://yup_lab:…@…/yupreserved?sslmode=require
+        sync: false
+      - key: YUP_SECRET                # signs OTP hashes and session tokens
+        generateValue: true
+      - key: YUP_SMS_PROVIDER          # console (demo: code shown on screen) | fast2sms | twilio
+        value: console
+      - key: YUP_OTP_DEMO
+        value: "1"
+      - key: YUP_FRONTEND_ORIGINS
+        value: https://yupreserved.onrender.com
